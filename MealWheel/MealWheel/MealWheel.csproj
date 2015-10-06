@@ -228,9 +228,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="ngApps\MultiPageApp\app.js" />
-    <Content Include="ngApps\MultiPageApp\controller.js" />
-    <Content Include="ngApps\MultiPageApp\controllers.js" />
     <Content Include="ngApps\MultiPageApp\index.html" />
     <Content Include="ngApps\MultiPageApp\search.html" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -261,9 +258,6 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
-    <Content Include="ngApps\MultiPageApp\app.js.map" />
-    <Content Include="ngApps\MultiPageApp\controller.js.map" />
-    <Content Include="ngApps\MultiPageApp\controllers.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
