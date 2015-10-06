@@ -1,0 +1,34 @@
+﻿@{ 
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MultiPageApp">
+<head>
+    <title></title>
+    <base href="/" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img class="nav-logo" alt="LogoHere"/>
+            <h3 class="nav-tab">Log</h3>
+            <h3 class="nav-tab">Sign Up</h3>
+            <h3 class="nav-tab pull-right">Search</h3>
+        </div>
+    </nav>
+    <ng-view></ng-view>
+
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/ngApps/MultiPageApp/app.js"></script>
+    <script src="~/ngApps/MultiPageApp/controllers.js"></script>
+</body>
+</html>
