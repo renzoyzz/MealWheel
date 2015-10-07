@@ -5,23 +5,17 @@
 <head>
     <title></title>
     <base href="/" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
+
     <nav>
-        <div class="container">
-            <img class="nav-logo" alt="LogoHere"/>
-            <h3 class="nav-tab">Log</h3>
-            <h3 class="nav-tab">Sign Up</h3>
-            <h3 class="nav-tab pull-right">Search</h3>
-        </div>
+        <ul id="nav-primary-container" class="nav-menu">
+           <li class="nav-item"><img id="nav-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" /></li>
+           <li class="nav-item nav-menu-item">UFO Sightings</li>
+           <li class="nav-item nav-menu-item">Log In</li>
+           <li class="nav-item nav-menu-item">Sign Up</li>
+        </ul>
     </nav>
     <ng-view></ng-view>
 

@@ -1,17 +1,33 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    margin: 0px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+#nav-logo {
+    height: 50px;
+    width: 50px;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+#nav-primary-container {
+    list-style-type:none;
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+.nav-item {
+    cursor:pointer;
+    margin: 0px;
+    text-align:center;
+    display:inline;
+    font-size:25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-menu-item {
+    background-color: aquamarine;
+    position: relative;
+    bottom: 15px;
+    padding-bottom: 10px;
+    padding-top:23px;
+    padding-bottom:27px;
 }

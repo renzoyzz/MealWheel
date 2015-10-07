@@ -11,7 +11,7 @@ var MultiPageApp;
         angular.module('MultiPageApp').controller('LoginController', LoginController);
         var SearchController = (function () {
             function SearchController() {
-                this.message = '';
+                this.message = 'find a food truck';
             }
             return SearchController;
         })();

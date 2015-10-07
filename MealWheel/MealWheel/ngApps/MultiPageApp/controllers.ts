@@ -7,7 +7,7 @@
     angular.module('MultiPageApp').controller('LoginController', LoginController);
 
     class SearchController {
-        message = ''
+        message = 'find a food truck'
     }
 
     angular.module('MultiPageApp').controller('SearchController', SearchController);
