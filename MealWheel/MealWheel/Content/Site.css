@@ -2,32 +2,68 @@
     margin: 0px;
 }
 
+#main-nav-bar{
+    background-color:burlywood;
+    border-bottom: 5px solid black;
+    margin-bottom: 10px;
+}
+
 #nav-logo {
     height: 50px;
     width: 50px;
 }
 
-#nav-primary-container {
-    list-style-type:none;
-    padding: 10px;
-    background-color: cadetblue;
+.nav-link {
+    text-decoration: none;
 }
 
 .nav-item {
-    cursor:pointer;
     margin: 0px;
     text-align:center;
     display:inline;
-    font-size:25px;
+    font-size:18px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .nav-menu-item {
+    border-bottom: 5px solid black;
+    color: black;
     background-color: aquamarine;
     position: relative;
     bottom: 15px;
-    padding-bottom: 10px;
     padding-top:23px;
-    padding-bottom:27px;
+    padding-bottom:20px;
 }
+
+#searchForm {
+    display:inline;
+    position:relative;
+    bottom: 17px;
+}
+
+#clearBoth {
+    clear:both;
+}
+
+.feature-truck-container img{
+    width: 80%;
+}
+
+.truck-name-display {
+    margin:0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    color:white;
+    position:relative;
+    left: 10%;
+    text-align: left;
+}
+.feature-truck-container {
+    display:inline;
+    float:left;
+    text-align:center;
+    display:inline;
+    width:33%;
+}
+

@@ -1,7 +1,15 @@
-﻿<h1>LOGIN PAGE</h1>
+﻿
 
-{{vm.message}}
+<div id="#featureOuterDiv">
+    <div ng-repeat="truck in vm.trucks" class="feature-truck-container">
+        <a href="/truck/{{truck.name}}" class=""><img ng-src="{{truck.pictureUrl}}" />
+        <h3 class="truck-name-display">{{truck.name}}</h3></a>
+        <p>{{truck.country}}</p>
+    </div>
+    <div id="clearBoth"></div>
+</div>
 
-<hr />
 
-<a href="/search">Look for your products here</a>
+
+
+<p>copyright &copy;</p>

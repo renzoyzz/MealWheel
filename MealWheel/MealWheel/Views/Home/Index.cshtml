@@ -9,19 +9,23 @@
 </head>
 <body>
 
-    <nav>
-        <ul id="nav-primary-container" class="nav-menu">
-           <li class="nav-item"><img id="nav-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" /></li>
-           <li class="nav-item nav-menu-item">UFO Sightings</li>
-           <li class="nav-item nav-menu-item">Log In</li>
-           <li class="nav-item nav-menu-item">Sign Up</li>
-        </ul>
+    <nav id="main-nav-bar">
+        <img id="nav-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" />
+        <a href="/index" class="nav-link"><h5 class="nav-item nav-menu-item">Find UFO</h5></a>
+        <a href="#" class="nav-link"><h5 class="nav-item nav-menu-item">Log In</h5></a>
+        <a href="#" class="nav-link"><h5 class="nav-item nav-menu-item">Sign Up</h5></a>
+        <form id="searchForm" ng-submit="">
+            <label>Search:</label>
+            <button type="submit">&prop;</button>
+            <input type="text" autocomplete="on" />
+        </form>
     </nav>
+    
     <ng-view></ng-view>
-
 
     <script src="~/Scripts/angular.min.js"></script>
     <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
     <script src="~/ngApps/MultiPageApp/app.js"></script>
     <script src="~/ngApps/MultiPageApp/controllers.js"></script>
 </body>
