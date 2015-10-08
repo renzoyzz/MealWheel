@@ -22,10 +22,11 @@ var MultiPageApp;
                 var _this = this;
                 this.$routeParams = $routeParams;
                 this.$location = $location;
-                debugger;
                 this.truckResource = $resource(foodTruckURL);
-                this.requestedTruck = this.truckResource.query(function (data) {
-                    console.log(_this.requestedTruck);
+                this.truckResource.query().$promise.then(function (data) {
+                    _this.requestedTruck = data.filter(function (value) {
+                        return value.name == $routeParams['name'];
+                    })[0];
                 });
             }
             return TruckProfileController;
@@ -40,4 +41,3 @@ var MultiPageApp;
         angular.module('MultiPageApp').controller('SearchController', SearchController);
     })(Controllers = MultiPageApp.Controllers || (MultiPageApp.Controllers = {}));
 })(MultiPageApp || (MultiPageApp = {}));
-//# sourceMappingURL=controllers.js.map

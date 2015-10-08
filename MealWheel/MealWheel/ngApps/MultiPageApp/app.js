@@ -22,4 +22,3 @@ var MultiPageApp;
         $locationProvider.html5Mode(true);
     });
 })(MultiPageApp || (MultiPageApp = {}));
-//# sourceMappingURL=app.js.map

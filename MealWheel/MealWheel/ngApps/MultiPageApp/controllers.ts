@@ -30,11 +30,13 @@
             $resource: ng.resource.IResourceService,
             private $location: ng.ILocationService
         ) {
-            debugger;
+
             this.truckResource = $resource(foodTruckURL)
-            this.requestedTruck = this.truckResource.query((data) => {
-                console.log(this.requestedTruck);
-            })
+            this.truckResource.query().$promise.then((data) => {
+                this.requestedTruck = data.filter((value) => {
+                    return value.name == $routeParams['name'];
+                })[0];
+            });
         }
     }
 

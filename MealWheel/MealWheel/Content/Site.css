@@ -52,10 +52,11 @@
 
 .truck-name-display {
     margin:0px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 80%;
     color:white;
     position:relative;
+    bottom: 20px;
     left: 10%;
     text-align: left;
 }
